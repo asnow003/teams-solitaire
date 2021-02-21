@@ -20,12 +20,8 @@ function App() {
 
   // Display the app home page hosted in Teams
   return (
-    <Router>
-      <Route exact path="/privacy" component={Privacy} />
-      <Route exact path="/termsofuse" component={TermsOfUse} />
-      <Route exact path="/tab" component={Tab} />
-      <Route exact path="/" component={Tab} />
-    </Router>
+    <Tab />
+
   );
 }
 
