@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/teams-solitaire/static/css/main.92a769be.chunk.css",
-    "main.js": "/teams-solitaire/static/js/main.46386bf6.chunk.js",
-    "main.js.map": "/teams-solitaire/static/js/main.46386bf6.chunk.js.map",
+    "main.js": "/teams-solitaire/static/js/main.e7187566.chunk.js",
+    "main.js.map": "/teams-solitaire/static/js/main.e7187566.chunk.js.map",
     "runtime-main.js": "/teams-solitaire/static/js/runtime-main.73e25b7f.js",
     "runtime-main.js.map": "/teams-solitaire/static/js/runtime-main.73e25b7f.js.map",
-    "static/js/2.c5579ca8.chunk.js": "/teams-solitaire/static/js/2.c5579ca8.chunk.js",
-    "static/js/2.c5579ca8.chunk.js.map": "/teams-solitaire/static/js/2.c5579ca8.chunk.js.map",
+    "static/js/2.bd719e0d.chunk.js": "/teams-solitaire/static/js/2.bd719e0d.chunk.js",
+    "static/js/2.bd719e0d.chunk.js.map": "/teams-solitaire/static/js/2.bd719e0d.chunk.js.map",
     "index.html": "/teams-solitaire/index.html",
     "static/css/main.92a769be.chunk.css.map": "/teams-solitaire/static/css/main.92a769be.chunk.css.map",
-    "static/js/2.c5579ca8.chunk.js.LICENSE.txt": "/teams-solitaire/static/js/2.c5579ca8.chunk.js.LICENSE.txt"
+    "static/js/2.bd719e0d.chunk.js.LICENSE.txt": "/teams-solitaire/static/js/2.bd719e0d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.73e25b7f.js",
-    "static/js/2.c5579ca8.chunk.js",
+    "static/js/2.bd719e0d.chunk.js",
     "static/css/main.92a769be.chunk.css",
-    "static/js/main.46386bf6.chunk.js"
+    "static/js/main.e7187566.chunk.js"
   ]
 }
