@@ -24,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +50,8 @@
   },
   "devDependencies": {
     "@types/fabric": "^4.2.0",
-    "fabric": "^4.2.0"
-  }
+    "fabric": "^4.2.0",
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "http://asnow003.github.io/teams-solitaire"
 }
