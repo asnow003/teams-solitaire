@@ -28,9 +28,6 @@ export class CanvasGame {
             s.changeScene = (sceneId: string) => {
                 this.changeScene(sceneId);
             }
-            s.pause = () => {
-                this.pause();
-            }
             s.restart = () => {
                 this.restart();
             }
@@ -96,7 +93,7 @@ export class CanvasGame {
                 
                 if (this.settings.isMaximized) {
                     // excess background color
-                    this.canvas.style.background = "black";
+                    this.canvas.style.background = "#f3f2f1";
     
                     this.canvas.width = document.documentElement.clientWidth;
                     this.canvas.height = document.documentElement.clientHeight;
@@ -141,7 +138,27 @@ export class CanvasGame {
     }
 
     public pause() {
-        this.isRunning = !this.isRunning;
+        this.isRunning = false;
+
+        this.scenes.forEach((s) => {
+            if (s.sceneId === this.activeSceneId) {
+                s.pause();
+            }
+        });
+    }
+
+    public unPause() {
+        if (!this.isRunning) {
+            this.isRunning = true;
+
+            this.scenes.forEach((s) => {
+                if (s.sceneId === this.activeSceneId) {
+                    s.unPause();
+                }
+            });
+
+            this.run();
+        }
     }
 
     public restart() {

@@ -257,5 +257,6 @@ export abstract class CanvasScene {
 
     public changeScene(sceneId: string) {}
     public pause() {}
+    public unPause() {}
     public restart() {}
 }

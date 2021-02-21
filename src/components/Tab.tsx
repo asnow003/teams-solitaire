@@ -44,13 +44,13 @@ class Tab extends React.Component<any, any> {
     });
 
     this.solitaire.start();
-
+    
     microsoftTeams.registerOnThemeChangeHandler(this.updateTheme);
 
     microsoftTeams.registerBeforeUnloadHandler(this.beforeUnload);
   
     microsoftTeams.registerOnLoadHandler(() => {
-      this.solitaire.pause();
+      this.solitaire.unPause();
       microsoftTeams.appInitialization.notifyAppLoaded();
     });
   }

@@ -36,6 +36,7 @@ export class SolitaireGame extends CanvasScene {
     public static Moves: number = 0;
     public static TotalSeconds: number = 0;
 
+    private isPaused: boolean = false;
     private interval: NodeJS.Timeout | undefined;
 
     constructor(settings: CanvasGameSettings) {
@@ -339,11 +340,21 @@ export class SolitaireGame extends CanvasScene {
         SolitaireGame.TotalSeconds = SolitaireGame.TotalSeconds + 1;
     }
 
-    public pause() {
+    public unPause = () => {
+        this.isPaused = false;
+
         if (this.interval) {
             clearInterval(this.interval);
-        } else {
-            this.interval = setInterval(this.updateTimer, 1000);
         }
+
+        this.interval = setInterval(this.updateTimer, 1000);
+    }
+
+    public pause = () => {
+        this.isPaused = true;
+
+        if (this.interval) {
+            clearInterval(this.interval);
+        } 
     }
 }
