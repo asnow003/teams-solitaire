@@ -12,12 +12,25 @@ import { Solitaire } from '../objects/Solitaire/Solitaire';
  */
 class Tab extends React.Component<any, any> {
 
+  private solitaire: Solitaire;
+
   constructor(props: any){
     super(props);
 
+    this.solitaire = new Solitaire();
     
     this.state = {
     }
+  }
+
+  private updateTheme = (themeStr?: string | null): void => {
+
+  }
+
+  private beforeUnload = (readyToUnload: ()=> void): boolean => {
+    this.solitaire.pause();
+    readyToUnload();
+    return true;
   }
 
   //React lifecycle method that gets called once a component has finished mounting
@@ -29,10 +42,17 @@ class Tab extends React.Component<any, any> {
         context: context
       });
     });
-    // Next steps: Error handling using the error object
 
-    const solitaire = new Solitaire();
-    solitaire.start();
+    this.solitaire.start();
+
+    microsoftTeams.registerOnThemeChangeHandler(this.updateTheme);
+
+    microsoftTeams.registerBeforeUnloadHandler(this.beforeUnload);
+  
+    microsoftTeams.registerOnLoadHandler(() => {
+      this.solitaire.pause();
+      microsoftTeams.appInitialization.notifyAppLoaded();
+    });
   }
 
   render() {
