@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/teams-solitaire/static/css/main.92a769be.chunk.css",
-    "main.js": "/teams-solitaire/static/js/main.50f94f22.chunk.js",
-    "main.js.map": "/teams-solitaire/static/js/main.50f94f22.chunk.js.map",
+    "main.js": "/teams-solitaire/static/js/main.d6a452fa.chunk.js",
+    "main.js.map": "/teams-solitaire/static/js/main.d6a452fa.chunk.js.map",
     "runtime-main.js": "/teams-solitaire/static/js/runtime-main.73e25b7f.js",
     "runtime-main.js.map": "/teams-solitaire/static/js/runtime-main.73e25b7f.js.map",
     "static/js/2.bd719e0d.chunk.js": "/teams-solitaire/static/js/2.bd719e0d.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.73e25b7f.js",
     "static/js/2.bd719e0d.chunk.js",
     "static/css/main.92a769be.chunk.css",
-    "static/js/main.50f94f22.chunk.js"
+    "static/js/main.d6a452fa.chunk.js"
   ]
 }
