@@ -198,6 +198,13 @@ export class Card extends CanvasBehaviorGroup {
 
         if (this.collisions.length > 0) {
             lastCollision = this.collisions[this.collisions.length - 1];
+
+            this.collisions.forEach((c: CanvasBehavior) => {
+                if (c instanceof CardStack &&
+                    c.canAddCard(this)) {
+                    lastCollision = c;
+                }
+            });
         }
 
         if (lastCollision &&
